@@ -1,0 +1,63 @@
+$main-green: #50c878;
+$secondary-green: #4ad478;
+$white: rgb(253, 253, 253);
+
+body{
+    background-color: $white;
+}
+
+/*      nav     */
+nav{
+    display: flex;
+    background-color: $white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right{
+    justify-content: space-between;
+
+    a{
+        text-decoration: none;
+        color:$main-green;
+        font-size: large;
+        font-weight: 800;
+        letter-spacing: 1.25pt;
+        margin: 0 15px;
+    }
+
+    span{
+    }
+}
+
+/*      home        */
+
+.home{
+    height: 100vh;
+    width: 100%;
+}
+
+.wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-text{
+    font-size: 72px;
+}
+
+#subtext{
+    font-size: 42px;
+    color: $main-green;
+}
+
+/*      pages       */
+.container{
+    height: 100vh;
+}

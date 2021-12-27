@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% load sass_tags %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayce Carrillo | Utah Programmer | Linux User | Open Source Advocate</title>
+    <link rel="shortcut icon" type="image/jpg" href="{% static 'assets/JC-favicon-01.png'%}"/>
+    <link rel="stylesheet" type="text/css" href="{% sass_src 'css/main.scss' %}">
+    <script type="text/javascript" src="{{ STATIC_URL }} /static/js/jquery-3.6.0.min.js">
+    </script> 
+    <script src="{% static '/js/frontend.js' %}" async></script>
+</head>
+<body>
+    <nav id="nav">
+        <div class="nav left">
+            <img src="{% static '/assets/JC-logo.png' %}" alt="" srcset="">
+        </div>
+        <div class="nav right">
+            <a href="#" class="nav-link"><span class="link-item">About</span></a>
+            <a href="#" class="nav-link"><span class="link-item">Portfolio</span></a>
+            <a href="#" class="nav-link"><span class="link-item">Skills</span></a>
+            <a href="#" class="nav-link"><span class="link-item">Blog</span></a>
+            <a href="#" class="nav-link"><span class="link-item contact">Contact</span></a>
+        </div>
+    </nav>
+    <div class="home">
+        <div class="wrap">
+            <div class="home-text-container">
+                <h2 class="head-text">Hi, I'm Jayce!</h2>
+                <h3 id="subtext" class="subtext-carousel">Utah Programmer</h3>
+            </div>
+            <div class="home-image-container">
+                <img src="{% static 'assets/home-image.png' %}" alt="" srcset="" >
+            </div>
+        </div>
+    </div>
+    <div class="container" id="about">
+        <h2 class="heading">About Me</h2>
+        <div class="wrap">
+        </div>
+    </div>
+    <div class="container" id="about">
+        <h2 class="heading">Portfolio</h2>
+        <div class="wrap">
+        </div>
+    </div>
+    <div class="container" id="skills">
+        <h2 class="heading">Skills</h2>
+        <div class="wrap">
+        </div>
+    </div>
+    <div class="container" id="blog">
+        <h2 class="heading">Blog</h2>
+        <div class="wrap">
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <h2 class="heading">Contact</h2>
+        <div class="wrap">
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+</body>
+</html>
