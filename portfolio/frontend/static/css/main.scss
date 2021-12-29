@@ -1,6 +1,12 @@
 $main-green: #50c878;
 $secondary-green: #4ad478;
 $white: rgb(253, 253, 253);
+$anims: ('');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
 
 body{
     background-color: $white;
@@ -25,9 +31,6 @@ nav{
         letter-spacing: 1.25pt;
         margin: 0 15px;
     }
-
-    span{
-    }
 }
 
 /*      home        */
@@ -50,6 +53,13 @@ nav{
 
 .head-text{
     font-size: 72px;
+    font-weight: 800;
+}
+
+.item{
+    font-size: 42px;
+    font-weight: 700;
+    color: $main-green;
 }
 
 #subtext{
@@ -60,4 +70,172 @@ nav{
 /*      pages       */
 .container{
     height: 100vh;
+    background-color: black;
 }
+
+.mask {
+    overflow: hidden;
+    height: 50px;
+}
+
+.slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .slider li {
+    width: 680px;
+    height: 320px;
+    position: absolute;
+    top: -325px;
+    list-style: none;
+  }
+  
+  .slider li.anim1 {
+    animation: cycle 15s linear infinite;
+  }
+  
+  .slider li.anim2 {
+    animation: cycle2 15s linear infinite;
+  }
+  
+  .slider li.anim3 {
+    animation: cycle3 15s linear infinite;
+  }
+  
+  .slider:hover li {
+    animation-play-state: running;
+  }
+  
+  @keyframes cycle {
+    0% {
+      top: 0px;
+    }
+    4% {
+      top: 0px;
+    }
+    16% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+    20% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+    21% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+    49% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+    50% {
+      top: -325px;
+      opacity: 0;
+      z-index: 0;
+    }
+    51% {
+      top: -325px;
+      opacity: 0;
+    }
+
+    59% {
+      top: 0px;
+      opacity: 1;
+    }
+
+    100% {
+      top: 0px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes cycle2 {
+    0% {
+      top: -325px;
+      opacity: 0;
+    }
+    16% {
+      top: -325px;
+      opacity: 0;
+    }
+    20% {
+      top: 0px;
+      opacity: 1;
+    }
+    24% {
+      top: 0px;
+      opacity: 1;
+    }
+    36% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+    40% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+    41% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+    100% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+  
+  @keyframes cycle3 {
+    0% {
+      top: -325px;
+      opacity: 0;
+    }
+    36% {
+      top: -325px;
+      opacity: 0;
+    }
+    40% {
+      top: 0px;
+      opacity: 1;
+    }
+    44% {
+      top: 0px;
+      opacity: 1;
+    }
+    56% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+    60% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+    61% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+    100% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+  /*    Main Pages    */
+
+  .heading{
+    text-align: center;
+  }
